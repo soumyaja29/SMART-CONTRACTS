@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_patientID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_doctorID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_recordData",
+						"type": "string"
+					}
+				],
+				"name": "addRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					}
+				],
+				"name": "getRecords",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "patientID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "doctorID",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "recordData",
+								"type": "string"
+							}
+						],
+						"internalType": "struct EHR.MedicalRecord[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patientRecords",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "patientID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "recordData",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Medical Record Management.sol": "EHR"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Medical Record Management.sol": {
+			"keccak256": "0x7d8b6b97e80cbe46e16f0eb3e80d5d9c70748c6c21edca36a98c6053efff0a73",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://32d65f6879c4dd89c55393219d6eca186e5810326d3d2cbab2386e5e7dfdb28e",
+				"dweb:/ipfs/QmbpLUgHFrFzs8Zzykw65xdqJvuNheyj2faFiBxVVuh92z"
+			]
+		}
+	},
+	"version": 1
+}
